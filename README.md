@@ -40,7 +40,7 @@ export default defineConfig({
 
 With `import` and `require` values in `exports`, in `package.json`
 
-```json
+```js
 {
   // Rest of package.json
   "exports": {
@@ -56,7 +56,7 @@ With `import` and `require` values in `exports`, in `package.json`
 
 If you modify the structure or naming, update they `types` key in `package.json`.
 
-```json
+```js
 {
   // Rest of package.json
   "types": "./dist/main.d.ts"
