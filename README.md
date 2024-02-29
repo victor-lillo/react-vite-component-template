@@ -1,6 +1,6 @@
 # react-vite-component-template
 
-Vite template for building a React component library, with TypeScript and Storybook.
+Template for building a **React component library**, with **Vite**, **TypeScript** and **Storybook**.
 
 ## 🤖 Scripts
 
