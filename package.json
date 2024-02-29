@@ -11,7 +11,8 @@
     "stylelint": "stylelint **/*.css",
     "stylelint:fix": "stylelint **/*.css --fix",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "test": "vitest"
   },
   "exports": {
     ".": {
@@ -33,6 +34,7 @@
     "@storybook/react": "7.6.17",
     "@storybook/react-vite": "7.6.17",
     "@storybook/test": "7.6.17",
+    "@testing-library/react": "14.2.1",
     "@types/node": "20.11.20",
     "@types/react": "18.2.58",
     "@types/react-dom": "18.2.19",
@@ -44,12 +46,14 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-react-refresh": "0.4.5",
     "eslint-plugin-storybook": "0.8.0",
+    "jsdom": "24.0.0",
     "prettier": "3.2.5",
     "storybook": "7.6.17",
     "stylelint": "16.2.1",
     "stylelint-config-standard": "36.0.0",
     "typescript": "5.3.3",
     "vite": "5.1.4",
-    "vite-plugin-dts": "3.7.3"
+    "vite-plugin-dts": "3.7.3",
+    "vitest": "1.3.1"
   }
 }
