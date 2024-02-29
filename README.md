@@ -24,7 +24,7 @@ Remember to align `fileName` value in `lib` object within `vite.config.ts`...
 
 ```js
 export default defineConfig({
-  // ...
+  // Rest of vite.config.ts
   build: {
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
@@ -39,10 +39,13 @@ export default defineConfig({
 With `import` and `require` values in `exports`, in `package.json`
 
 ```json
-"exports": {
-  ".": {
-    "import": "./dist/my-lib.js",
-    "require": "./dist/my-lib.umd.cjs"
+{
+  // Rest of package.json
+  "exports": {
+    ".": {
+      "import": "./dist/my-lib.js",
+      "require": "./dist/my-lib.umd.cjs"
+    }
   }
 }
 ```
@@ -52,5 +55,8 @@ With `import` and `require` values in `exports`, in `package.json`
 If you modify the structure or naming, update they `types` key in `package.json`.
 
 ```json
-"types": "./dist/main.d.ts",
+{
+  // Rest of package.json
+  "types": "./dist/main.d.ts"
+}
 ```
