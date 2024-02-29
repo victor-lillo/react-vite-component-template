@@ -2,7 +2,13 @@
 
 Template for building a **React component library**, with **Vite**, **TypeScript** and **Storybook**.
 
-With **Stylelint**, **Eslint** & **Prettier** configured.
+### 📐 Linters & formatters
+
+**Stylelint**, **Eslint** & **Prettier** configured.
+
+### 🧪 Testing
+
+Using **Vitest** with **jsdom** environment and ready for generating coverages.
 
 ## 🤖 Scripts
 
