@@ -13,6 +13,13 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
+  "exports": {
+    ".": {
+      "import": "./dist/my-lib.js",
+      "require": "./dist/my-lib.umd.cjs"
+    }
+  },
+  "types": "./dist/main.d.ts",
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -44,12 +51,5 @@
     "typescript": "5.3.3",
     "vite": "5.1.4",
     "vite-plugin-dts": "3.7.3"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
-    }
-  },
-  "types": "./dist/main.d.ts"
+  }
 }
