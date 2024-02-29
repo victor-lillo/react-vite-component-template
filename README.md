@@ -9,8 +9,8 @@ With **Stylelint**, **Eslint** & **Prettier** configured.
 |      Script       | Function                                                                         |
 | :---------------: | -------------------------------------------------------------------------------- |
 |      `build`      | Build the `dist`, with types declarations, after checking types with TypeScript. |
-|    `storybook`    | Starts a Storybook development server.                                           |
-| `build-storybook` | Builds the Storybook `dist`.                                                     |
+|    `storybook`    | Start a Storybook development server.                                            |
+| `build-storybook` | Build the Storybook `dist`.                                                      |
 |      `lint`       | Lint the project with **Eslint**.                                                |
 |    `lint:fix`     | Lint and fix the project with **Eslint**.                                        |
 |     `format`      | Check the project format with **Prettier**.                                      |
