@@ -23,11 +23,17 @@ With **Stylelint**, **Eslint** & **Prettier** configured.
 Remember to align `fileName` value in `lib` object within `vite.config.ts`...
 
 ```js
-lib: {
-  entry: resolve(__dirname, 'src/main.ts'),
-  name: 'MyLib',
-  fileName: 'my-lib',
-}
+export default defineConfig({
+  // ...
+  build: {
+    lib: {
+      entry: resolve(__dirname, 'src/main.ts'),
+      name: 'MyLib',
+      fileName: 'my-lib',
+    },
+  },
+  // ...
+})
 ```
 
 With `import` and `require` values in `exports`, in `package.json`
