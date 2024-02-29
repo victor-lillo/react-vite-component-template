@@ -50,5 +50,6 @@
       "import": "./dist/my-lib.js",
       "require": "./dist/my-lib.umd.cjs"
     }
-  }
+  },
+  "types": "./dist/main.d.ts"
 }
