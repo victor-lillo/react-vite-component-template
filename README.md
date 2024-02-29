@@ -40,13 +40,13 @@ export default defineConfig({
 
 With `import` and `require` values in `exports`, in `package.json`
 
-```jsonc
+```json5
 {
   // Rest of package.json
-  "exports": {
-    ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs",
+  exports: {
+    '.': {
+      import: './dist/my-lib.js',
+      require: './dist/my-lib.umd.cjs',
     },
   },
 }
@@ -56,9 +56,9 @@ With `import` and `require` values in `exports`, in `package.json`
 
 If you modify the structure or naming, update they `types` key in `package.json`.
 
-```jsonc
+```json5
 {
   // Rest of package.json
-  "types": "./dist/main.d.ts",
+  types: './dist/main.d.ts',
 }
 ```
