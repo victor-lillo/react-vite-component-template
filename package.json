@@ -23,6 +23,9 @@
       "require": "./dist/my-lib.umd.cjs"
     }
   },
+  "files": [
+    "dist"
+  ],
   "types": "./dist/main.d.ts",
   "dependencies": {
     "react": "18.2.0",
