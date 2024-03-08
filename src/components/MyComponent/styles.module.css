@@ -7,6 +7,8 @@
 
 .button--primary {
   --bg-color: crimson;
+
+  backdrop-filter: sepia(90%);
 }
 
 .button--small {
