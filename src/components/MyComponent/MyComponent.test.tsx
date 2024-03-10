@@ -13,4 +13,14 @@ describe('MyComponent test:', () => {
     render(<MyComponent label='Testing' />)
     screen.getByText('Testing')
   })
+
+  it('should be disabled', () => {
+    render(
+      <MyComponent
+        label='Testing'
+        disabled
+      />
+    )
+    expect(screen.getByRole('button')).toBeDisabled()
+  })
 })
