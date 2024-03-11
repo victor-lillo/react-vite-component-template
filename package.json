@@ -13,7 +13,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "vitest --ui",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run test && npm run build"
   },
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
