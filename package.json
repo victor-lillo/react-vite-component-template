@@ -14,7 +14,7 @@
     "build-storybook": "storybook build",
     "test": "vitest --ui",
     "coverage": "vitest run --coverage",
-    "prepublishOnly": "npm run test && npm run build"
+    "prepublishOnly": "vitest run && npm run build"
   },
   "main": "./dist/my-lib.umd.cjs",
   "module": "./dist/my-lib.js",
