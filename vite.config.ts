@@ -1,9 +1,7 @@
 /// <reference types="vite/client" />
 /// <reference types="vitest" />
-
 import path, { resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
-
 import { globSync } from 'glob'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
