@@ -28,7 +28,7 @@
     "dist"
   ],
   "types": "./dist/main.d.ts",
-  "dependencies": {
+  "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -60,12 +60,15 @@
     "eslint-plugin-storybook": "0.8.0",
     "jsdom": "24.0.0",
     "prettier": "3.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "storybook": "8.0.0",
     "stylelint": "16.2.1",
     "stylelint-config-standard": "36.0.0",
     "typescript": "5.3.3",
     "vite": "5.1.4",
     "vite-plugin-dts": "3.7.3",
+    "vite-plugin-lib-inject-css": "2.0.0",
     "vitest": "1.3.1"
   }
 }
