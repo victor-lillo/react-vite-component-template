@@ -8,7 +8,7 @@ interface ComponentProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: () => void
 }
 
-export function MyComponent({ primary = false, size = 'medium', label, ...props }: ComponentProps) {
+export function MyButton({ primary = false, size = 'medium', label, ...props }: ComponentProps) {
   const style = classnames(styles.button, {
     [styles['button--primary']]: primary,
     [styles[`button--${size}`]]: size,
