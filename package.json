@@ -16,12 +16,11 @@
     "coverage": "vitest run --coverage",
     "prepublishOnly": "vitest run && npm run build"
   },
-  "main": "./dist/my-lib.umd.cjs",
-  "module": "./dist/my-lib.js",
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/main.js"
     }
   },
   "files": [
