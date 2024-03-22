@@ -1,5 +1,5 @@
 import styles from './styles.module.css'
-import classnames from 'classnames-creator'
+import clsx from 'clsx'
 
 interface ComponentProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   primary?: boolean
@@ -9,7 +9,7 @@ interface ComponentProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 export function MyButton({ primary = false, size = 'medium', label, ...props }: ComponentProps) {
-  const style = classnames(styles.button, {
+  const style = clsx(styles.button, {
     [styles['button--primary']]: primary,
     [styles[`button--${size}`]]: size,
   })

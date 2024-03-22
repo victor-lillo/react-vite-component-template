@@ -1,5 +1,5 @@
 import styles from './styles.module.css'
-import classnames from 'classnames-creator'
+import clsx from 'clsx'
 
 interface ComponentProps extends React.HTMLAttributes<HTMLHeadingElement> {
   primary?: boolean
@@ -7,7 +7,7 @@ interface ComponentProps extends React.HTMLAttributes<HTMLHeadingElement> {
 }
 
 export function MyTitle({ primary = false, title, ...props }: ComponentProps) {
-  const style = classnames(styles.title, {
+  const style = clsx(styles.title, {
     [styles['title--primary']]: primary,
   })
 
