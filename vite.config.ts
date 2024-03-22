@@ -27,14 +27,18 @@ export default defineConfig({
       external: ['react', 'react-dom', 'react/jsx-runtime'],
       // https://rollupjs.org/configuration-options/#input
       input: Object.fromEntries(
-        globSync(['src/components/**/index.tsx', 'src/main.ts']).map((file) => [
+        globSync(['src/components/**/index.tsx', 'src/main.ts']).map((file) => {
           // This remove `src/` as well as the file extension from each
           // file, so e.g. src/nested/foo.js becomes nested/foo
-          path.relative('src', file.slice(0, file.length - path.extname(file).length)),
+          const entryName = path.relative(
+            'src',
+            file.slice(0, file.length - path.extname(file).length)
+          )
           // This expands the relative paths to absolute paths, so e.g.
           // src/nested/foo becomes /project/src/nested/foo.js
-          fileURLToPath(new URL(file, import.meta.url)),
-        ])
+          const entryUrl = fileURLToPath(new URL(file, import.meta.url))
+          return [entryName, entryUrl]
+        })
       ),
       output: {
         entryFileNames: '[name].js',
