@@ -16,20 +16,15 @@
     "coverage": "vitest run --coverage",
     "prepublishOnly": "vitest run && npm run build"
   },
-  "main": "./dist/main.js",
   "module": "./dist/main.js",
-  "exports": {
-    ".": {
-      "import": "./dist/main.js"
-    }
-  },
+  "exports": "./dist/main.js",
   "files": [
     "dist"
   ],
   "types": "./dist/main.d.ts",
   "peerDependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.2.21",
@@ -60,8 +55,6 @@
     "glob": "10.3.10",
     "jsdom": "24.0.0",
     "prettier": "3.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
     "storybook": "8.0.0",
     "stylelint": "16.2.1",
     "stylelint-config-standard": "36.0.0",
