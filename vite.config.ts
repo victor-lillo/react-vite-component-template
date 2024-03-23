@@ -19,7 +19,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
-      formats: ['es'],
+      formats: ['es', 'cjs'],
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
@@ -38,15 +38,28 @@ export default defineConfig({
           return [entryName, entryUrl]
         })
       ),
-      output: {
-        entryFileNames: '[name].js',
-        assetFileNames: 'assets/[name][extname]',
-        globals: {
-          react: 'React',
-          'react-dom': 'React-dom',
-          'react/jsx-runtime': 'react/jsx-runtime',
+      output: [
+        {
+          format: 'es',
+          entryFileNames: 'es/[name].js',
+          assetFileNames: 'assets/[name][extname]',
+          globals: {
+            react: 'React',
+            'react-dom': 'React-dom',
+            'react/jsx-runtime': 'react/jsx-runtime',
+          },
         },
-      },
+        {
+          format: 'cjs',
+          entryFileNames: 'cjs/[name].js',
+          assetFileNames: 'assets/[name][extname]',
+          globals: {
+            react: 'React',
+            'react-dom': 'React-dom',
+            'react/jsx-runtime': 'react/jsx-runtime',
+          },
+        },
+      ],
     },
   },
   test: {
