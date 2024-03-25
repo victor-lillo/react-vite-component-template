@@ -5,7 +5,6 @@ interface ComponentProps extends React.ComponentProps<'button'> {
   primary?: boolean
   size?: 'small' | 'medium' | 'large'
   label: string
-  onClick?: () => void
 }
 
 export function MyButton({ primary = false, size = 'medium', label, ...props }: ComponentProps) {
