@@ -1,7 +1,7 @@
 import styles from './styles.module.css'
 import clsx from 'clsx'
 
-interface ComponentProps extends React.HTMLAttributes<HTMLHeadingElement> {
+interface ComponentProps extends React.ComponentProps<'h1'> {
   primary?: boolean
   title: string
 }
