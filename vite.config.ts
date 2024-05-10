@@ -14,7 +14,7 @@ export default defineConfig({
     react(),
     // https://github.com/vitejs/vite/issues/1579#issuecomment-1483756199
     libInjectCss(),
-    dts({ exclude: ['**/*.stories.ts', 'src/test', '**/*.test.tsx'] }),
+    dts({ exclude: ['**/*.stories.tsx', 'src/test', '**/*.test.tsx'] }),
   ],
   build: {
     lib: {
@@ -58,7 +58,7 @@ export default defineConfig({
     css: true,
     coverage: {
       include: ['src/components'],
-      exclude: ['**/*.stories.ts'],
+      exclude: ['**/*.stories.tsx'],
     },
   },
 })
