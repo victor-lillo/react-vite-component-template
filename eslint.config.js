@@ -3,7 +3,7 @@ import tseslint from 'typescript-eslint'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import eslintConfigPrettier from 'eslint-config-prettier'
 
-// Wait till this is published: https://github.com/storybookjs/eslint-plugin-storybook/pull/152
+// Wait till this is published: https://github.com/storybookjs/eslint-plugin-storybook/pull/156
 export default tseslint.config(
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
