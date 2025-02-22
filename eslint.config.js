@@ -9,12 +9,7 @@ import storybook from 'eslint-plugin-storybook'
 export default tseslint.config(
   { ignores: ['dist', '.storybook', 'postcss.config.cjs'] },
   {
-    extends: [
-      js.configs.recommended,
-      ...tseslint.configs.recommended,
-      ...storybook.configs['flat/recommended'],
-      eslintConfigPrettier,
-    ],
+    extends: [js.configs.recommended, ...tseslint.configs.recommended, eslintConfigPrettier],
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
@@ -28,5 +23,9 @@ export default tseslint.config(
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     },
+  },
+  {
+    files: ['**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)'],
+    extends: [...storybook.configs['flat/recommended']],
   }
 )
