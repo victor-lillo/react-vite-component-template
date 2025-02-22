@@ -7,7 +7,7 @@ import eslintConfigPrettier from 'eslint-config-prettier'
 import storybook from 'eslint-plugin-storybook'
 
 export default tseslint.config(
-  { ignores: ['dist', '!.storybook', 'postcss.config.cjs'] },
+  { ignores: ['dist', '.storybook', 'postcss.config.cjs'] },
   {
     extends: [
       js.configs.recommended,
