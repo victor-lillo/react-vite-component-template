@@ -12,7 +12,8 @@
     "stylelint:fix": "stylelint **/*.css --fix",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "test": "vitest --ui",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
     "coverage": "vitest run --coverage",
     "prepublishOnly": "vitest run && npm run build"
   },
