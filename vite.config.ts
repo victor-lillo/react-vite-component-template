@@ -1,5 +1,5 @@
 /// <reference types="vite/client" />
-/// <reference types="vitest" />
+/// <reference types="vitest/config" />
 import path, { resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { globSync } from 'glob'
